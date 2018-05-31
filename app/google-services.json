@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "646482678983",
+    "firebase_url": "https://spellcasters-e3f4c.firebaseio.com",
+    "project_id": "spellcasters-e3f4c",
+    "storage_bucket": "spellcasters-e3f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646482678983:android:e8513af450c1d104",
+        "android_client_info": {
+          "package_name": "com.example.erik.spellcasters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646482678983-9ltk0dknnan3i0q5lt2eeuk88dlu032r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.erik.spellcasters",
+            "certificate_hash": "6073AF0A273381502A6909D9035C7EBB4E815A59"
+          }
+        },
+        {
+          "client_id": "646482678983-bjqjgdptrb02gnsfhhm4jdcil91brqss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.erik.spellcasters",
+            "certificate_hash": "1BA83765A576229D1E2BFB3863609B58FD29FD30"
+          }
+        },
+        {
+          "client_id": "646482678983-mse7agmqbkeltlgkimjbopni87i9ef05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4zwC7YWzVDVIGTIxV7fWYNO2-NJLw7AA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646482678983-mse7agmqbkeltlgkimjbopni87i9ef05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

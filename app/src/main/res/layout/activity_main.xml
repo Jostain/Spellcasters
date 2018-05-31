@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/spellCasters">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="0"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/viewA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:theme="@style/spellCasters">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Announcements"
+                    android:layout_margin="20dp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewB"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:theme="@style/spellCasters"
+            android:padding="5dp"
+            android:background="?attr/colorPrimary"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_health_indicator"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:tint="@color/Red" />
+
+                <TextView
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sanityMeter"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:textColor="@color/Purple" />
+
+                <TextView
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/healthMeter"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:textColor="@color/Red" />
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_brain"
+                    android:id="@+id/imageView3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_above="@+id/healthMeter"
+                    android:layout_alignParentStart="true"
+                    android:tint="@color/Purple" />
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_winged_shield"
+                    android:id="@+id/imageView5"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_above="@+id/sanityMeter"
+                    android:layout_alignParentStart="true"
+                    android:tint="@color/Grey" />
+
+                <TextView
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shieldMeter"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:textColor="@color/Grey" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/ic_shield_reflect"
+                    android:id="@+id/imageView7"
+                    android:layout_above="@+id/imageView5"
+                    android:layout_alignParentStart="true"
+                    android:tint="@color/Yellow" />
+
+                <TextView
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blockMeter"
+                    android:layout_alignTop="@+id/imageView7"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:textColor="@color/Yellow" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/ic_frostfire"
+                    android:id="@+id/imageView8"
+                    android:layout_above="@+id/imageView7"
+                    android:layout_alignParentStart="true"
+                    android:tint="@color/Orange" />
+
+                <TextView
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/heatMeter"
+                    android:textColor="@color/Orange"
+                    android:layout_alignTop="@+id/imageView8"
+                    android:layout_toEndOf="@+id/imageView7" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/ic_dodging"
+                    android:layout_above="@+id/imageView8"
+                    android:id="@+id/imageView9" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/ic_wingfoot"
+                    android:id="@+id/imageView10"
+                    android:layout_above="@+id/imageView9"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/Help"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+
+                <TextView
+                    android:text="2x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/speedMeter"
+                    android:textColor="@color/Grey"
+                    android:layout_alignTop="@+id/imageView10"
+                    android:layout_toEndOf="@+id/imageView9" />
+
+                <TextView
+                    android:text="99%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dodgeMeter"
+                    android:textColor="@color/Grey"
+                    android:layout_below="@+id/imageView10"
+                    android:layout_toEndOf="@+id/imageView8" />
+
+                <TextView
+                    android:text="Cast Spell!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coolDownMeter"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageButton
+                    android:id="@+id/castSpell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/coolDownMeter"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_seal" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cyanMana"
+                    android:textColor="@color/Cyan"
+                    android:layout_below="@+id/sanityMeter"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blueMana"
+                    android:textColor="@color/Blue"
+                    android:layout_above="@+id/cyanMana"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/greenMana"
+                    android:textColor="@color/Green"
+                    android:layout_below="@+id/blockMeter"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yellowMana"
+                    android:textColor="@color/Yellow"
+                    android:layout_above="@+id/shieldMeter"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orangeMana"
+                    android:textColor="@color/Orange"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/redMana"
+                    android:textColor="@color/Red"
+                    android:textAllCaps="false"
+                    android:layout_alignBaseline="@+id/dodgeMeter"
+                    android:layout_alignBottom="@+id/dodgeMeter"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/purpleMana"
+                    android:textColor="@color/Purple"
+                    android:layout_above="@+id/redMana"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/octarineMana"
+                    android:textColor="@color/Grey"
+                    android:layout_above="@+id/purpleMana"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

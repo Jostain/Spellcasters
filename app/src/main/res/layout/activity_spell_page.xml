@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.erik.spellcasters.SpellPageActivity"
+    android:outlineProvider="paddedBounds">
+
+    <Button
+        android:id="@+id/nextSpell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:text="Next Spell" />
+
+    <Button
+        android:text="Prev Spell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prevSpell"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/toolbarSpellpage"
+        android:paddingLeft="0dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum"
+        android:textStyle="normal|italic"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/SpellPortrait"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_above="@+id/ManaCost" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/deckCounter"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        tools:background="?android:attr/colorBackground">
+
+        <TextView
+            android:id="@+id/OctarineCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Grey"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/PurpleCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Purple" />
+
+        <TextView
+            android:id="@+id/RedCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Red" />
+
+        <TextView
+            android:id="@+id/OrangeCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Orange" />
+
+        <TextView
+            android:id="@+id/YellowCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Yellow" />
+
+        <TextView
+            android:id="@+id/GreenCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Green" />
+
+        <TextView
+            android:id="@+id/BlueCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Blue" />
+
+        <TextView
+            android:id="@+id/CyanCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/Cyan" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deckCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cast"
+        android:layout_centerHorizontal="true"
+        android:text="0/0"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cast"
+        android:minHeight="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Magic Missile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spellHeader"
+        android:padding="16dp"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/toolbarSpellpage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/magic_missle_192"
+        android:id="@+id/SpellPortrait"
+        android:paddingTop="20dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/toolbarSpellpage"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
